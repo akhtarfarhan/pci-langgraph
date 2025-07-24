@@ -1,0 +1,41 @@
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+*.egg
+dist/
+build/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# IDE/Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+# Machine learning models/data (common in LangGraph projects)
+*.bin
+*.pth
+*.h5
+*.pt
+*.joblib
+data/
+models/
+
+# Environment files (never commit these!)
+.env
+*.env
+secrets.yml
+config.json
