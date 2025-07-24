@@ -19,26 +19,8 @@ The application detects a user’s customer segment (Value‑Seeker, Premium, Te
 
 ## 2  Architecture Diagram
 
-```mermaid
-flowchart LR
-    subgraph Frontend
-        A[Streamlit UI]
-    end
-    subgraph Backend
-        B(FastAPI / Uvicorn)
-        C[LangGraph Graph\ncontext → segment → suggest]
-        D[Checkpoint Store\n(SQLite / Memory / No‑op)]
-        E[Ollama Daemon\n(local LLM)]
-    end
+<img width="1107" height="321" alt="image" src="https://github.com/user-attachments/assets/16f4da3b-8885-44c8-ac87-538ef240dfc0" />
 
-    A -- HTTP → B
-    B -- invoke --> C
-    C -- load/dump --> D
-    C -- prompt ➜ E
-    E -- response --> C
-    C -- JSON --> B
-    B -- JSON --> A
-```
 
 ---
 
