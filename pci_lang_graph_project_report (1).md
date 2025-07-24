@@ -118,13 +118,5 @@ Overall, small, focused Python modules compose into a full local‑LLM product d
 - **Smarter segmentation**: embed queries & run k‑NN over past users.
 - **Docker container** for one‑command deployment.
 
----
-
-## 8  Demo Checklist
-
--
-
----
-
 > **Author:** Farhan Akhtar — July 2025
 
